@@ -42,8 +42,8 @@ public class TemporalAdjustersTest02 {
         System.out.println("NEXT BUSINESS DAY IS " + now.getDayOfWeek());
 
         System.out.println();
-        System.out.println("ALTERADA A DATA");
-        now = LocalDate.now().withDayOfMonth(30).with(new ObterProximoDiaUtil());
+        System.out.println("ALTERADA A DATA DESSE MES");
+        now = LocalDate.now().withDayOfMonth(11).with(new ObterProximoDiaUtil());
         System.out.println(now);
         System.out.println("NEXT BUSINESS DAY IS " + now.getDayOfWeek());
     }
