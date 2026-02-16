@@ -5,7 +5,9 @@ import java.util.regex.Pattern;
 
 public class PatternMatcherTest01 {
     public static void main(String[] args) {
-        //é utilizado para validações como por exemplo um email
+        //Regex é utilizado para validações como por exemplo um email
+        //Utilize o site Regex.com ele é um bom exemplo de funcionamento do regex
+
 
         String regex = "ab";
         String texto = "abaaba";

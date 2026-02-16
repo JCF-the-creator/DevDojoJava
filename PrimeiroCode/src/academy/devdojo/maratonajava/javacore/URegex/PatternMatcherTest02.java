@@ -19,6 +19,7 @@ public class PatternMatcherTest02 {
         // {n,m} = de n até m 
         // | = "o(v|c)o", vai verificar "ovo" ou "oco"
         // $ = fim da linha
+        // . = 1.3 resulta 123, 133, 1@3, 1A3 - o ponto entra como qualquer caractere
 
         String regex = "\\d";
         String texto = "jh8e1kn3kn340";
