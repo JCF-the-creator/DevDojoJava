@@ -1,0 +1,1 @@
+StandardCopyOption copia todos os dados do arquivo
