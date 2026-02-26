@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
-public class PathTesto2 {
+public class PathTest02 {
     public static void main(String[] args) {
 
         // Usando Directories ele cria as pastas necessáras e sobrepoem caso já exista
