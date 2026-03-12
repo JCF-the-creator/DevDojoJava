@@ -8,11 +8,16 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import academy.devdojo.maratonajava.javacore.XSerialization.Dominio.Aluno;
+import academy.devdojo.maratonajava.javacore.XSerialization.Dominio.Turma;
 
 public class SerializationTest01 {
     public static void main(String[] args) {
         Aluno aluno = new Aluno(1L, "James", "8342");
-        //serializar(aluno);
+
+        Turma turma = new Turma("Sala1");
+        aluno.setTurma(turma);
+
+        serializar(aluno);
         deserializar(); //não executa o construtor
     }
     
