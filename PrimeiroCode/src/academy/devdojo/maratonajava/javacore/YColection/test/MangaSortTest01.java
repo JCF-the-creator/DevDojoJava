@@ -2,9 +2,21 @@ package academy.devdojo.maratonajava.javacore.YColection.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import academy.devdojo.maratonajava.javacore.YColection.Dominio.Manga;
+
+//comparator faz uma comparar em um ponto especifico do software
+
+class MangaByIdComparator implements Comparator<Manga>{
+
+    @Override
+    public int compare(Manga manga1, Manga manga2) {
+        return manga1.getId().compareTo(manga2.getId());
+    }
+}
+
 
 public class MangaSortTest01 {
     public static void main(String[] args) {
@@ -23,10 +35,16 @@ public class MangaSortTest01 {
 
         Collections.sort(mangas);
         System.out.println("-------------------------");
+        for(Manga manga : mangas){
+            System.out.println(manga);
+        }
 
+        //Collections.sort(mangas, new MangaByIdComparator());
+        mangas.sort(new MangaByIdComparator()); // mesma forma acima 
+        System.out.println("-------------------------");
         for(Manga manga : mangas){
             System.out.println(manga);
         }
 
     }
-}
+} 
