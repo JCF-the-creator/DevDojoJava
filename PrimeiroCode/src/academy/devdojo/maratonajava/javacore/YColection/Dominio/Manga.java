@@ -61,7 +61,7 @@ public class Manga implements Comparable<Manga>{
 
     @Override
     public String toString() {
-        return "Manga [id=" + id + ", nome=" + nome + ", preco=" + preco + "]";
+        return "Manga [id= " + id + ", nome= " + nome + ", preco= " + preco + "]";
     }
 
 
