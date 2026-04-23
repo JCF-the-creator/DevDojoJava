@@ -9,7 +9,7 @@ import academy.devdojo.maratonajava.javacore.YColection.Dominio.Manga;
 public class InteratorTest01 {
     public static void main(String[] args) {
 
-        List<Manga> mangas = new ArrayList<>();
+        List<Manga> mangas = new LinkedList<>();//LinkedList é um array que sabe sua posição, a proxima e a anterior, tendo uma permoface melhor para retirada de itens
         mangas.add(new Manga(5L, "Hellsing Ultimate", 19.99, 0));
         mangas.add(new Manga(1L, "Berserk", 29.99, 5));
         mangas.add(new Manga(6L, "Attack on titan", 9.99, 0));
